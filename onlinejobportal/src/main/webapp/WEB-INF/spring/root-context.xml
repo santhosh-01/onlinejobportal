@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+		<bean id="applicantDAO" class="com.edu.onlinejobportal.Dao.ApplicantDAO"/>
+		<bean id="companyDAO" class="com.edu.onlinejobportal.Dao.CompanyDAO"/>
+		<bean id="jobsDAO" class="com.edu.onlinejobportal.Dao.JobsDAO"/>
+		<bean id="applicationDAO" class="com.edu.onlinejobportal.Dao.ApplicationDAO"/>
+		<bean id="jobDescriptionDAO" class="com.edu.onlinejobportal.Dao.JobDescriptionDAO"/>
+		<bean id="applicant" class="com.edu.onlinejobportal.Pojo.Applicant"/>
+		<bean id="application" class="com.edu.onlinejobportal.Pojo.Application"/>
+		<bean id="applicantValidator" class="com.edu.onlinejobportal.Validator.ApplicantValidator"/>
+		<bean id="companyValidator" class="com.edu.onlinejobportal.Validator.CompanyValidator"/>
+		
+		<bean id="multipartResolver"
+			class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+		
+</beans>
